@@ -266,8 +266,8 @@ PS C:\Users\tomma> (Invoke-WebRequest ifconfig.me/ip).Content
 ## III. Le requin
 ☀️ Capture ARP, DNS, TCP
 ```
-[Lien vers capture ARP](captures/arp.pcap)
-[Lien vers capture DNS](captures/dns.pcap)
-[Lien vers capture TCP](captures/tcp.pcap)
+[Lien vers capture ARP](./captures/arp.pcapng)
+[Lien vers capture DNS](./captures/dns.pcapng)
+[Lien vers capture TCP](./captures/tcp.pcapng)
 
 ```
