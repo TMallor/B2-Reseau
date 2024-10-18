@@ -2,10 +2,10 @@
 
 ## Carte de tout le batiment 
 
-![Carte de tout le batiment1](/TP3/batiment_ynov.jpg)  
-![Carte de tout le batiment2](/TP3/batiment_ynov_2.jpg)  
-![Carte de tout le batiment3](/TP3/batiment_ynov_3.jpg)  
-![Carte de tout le batiment4](/TP3/batiment_ynov_4.jpg)
+![Carte de tout le batiment1](/tp3/batiment_ynov.jpg)  
+![Carte de tout le batiment2](/tp3/batiment_ynov_2.jpg)  
+![Carte de tout le batiment3](/tp3/batiment_ynov_3.jpg)  
+![Carte de tout le batiment4](/tp3/batiment_ynov_4.jpg)
 
 ## Fika
 ### Télé iiyama : 
