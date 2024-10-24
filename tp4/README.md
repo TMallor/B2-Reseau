@@ -37,3 +37,25 @@ PS C:\Users\tomma\Ynov\B2\B2-Reseau\tp4> python .\dns_lookup.py
 DNS Ans 104.26.11.233
 
 ```
+
+## II. ARP Poisoning
+🌞 arp_poisoning.py
+```
+[ton@client1 "]$ arp -a
+bbox.lan (192.168.1.254) at 34:db:9c:95:4:8c [ether] on enp0s3
+?🌞(192.168.1.46) at de:ad:be:ef:ca:fe [ether] on enp0s3🌞
+client2.lan (192.168.1.156) at 08:00:27:cc:c4:2b [ether] on enp0s3
+AsusTM.lan (192.168.1.147) at 30:89:4a:2:5a:aa [ether] on enp0s3 
+```
+
+## II. Exfiltration ICMP
+
+🌞 icmp_exf_send.py
+```
+
+```
+
+🌞 icmp_exf_receive.py
+```
+
+```
