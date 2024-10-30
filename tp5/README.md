@@ -126,13 +126,7 @@ Mettre en place un pare-feu pour bloquer les ports entrants non nécessaires, en
 iptables -t filter -P INPUT DROP; iptables -A INPUT -p tcp --dport 22 -j ACCEPT; iptables -A INPUT -p tcp --dport 13337 -j ACCEPT
 
 ```
-```
-iptables -t filter -P OUTPUT DROP; iptables -A OUTPUT -p tcp --dport 22 -j ACCEPT; iptables -A OUTPUT -p tcp --dport 13337 -j ACCEPT
 
-```
-```
-iptables -t filter -P FORWARD DROP;
-```
 ```
 [tom@ServTp5 ~]$ sudo iptables -L -v -n
 Chain INPUT (policy DROP 33 packets, 3284 bytes)
@@ -140,13 +134,12 @@ Chain INPUT (policy DROP 33 packets, 3284 bytes)
  2401  157K ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
     0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:13337
 
-Chain FORWARD (policy DROP 0 packets, 0 bytes)
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
 
-Chain OUTPUT (policy ACCEPT 877 packets, 87960 bytes)
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
  pkts bytes target     prot opt in     out     source               destination
-    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22
-    0     0 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:13337
+
 ```
 ```
 Avec cette commande seul les connexions les port 22 et 13337 sont autorisé. Bloquer ses ports réduit les chances de découvrir des services vulnérables qui pourraient fonctionner sur d'autres ports.

