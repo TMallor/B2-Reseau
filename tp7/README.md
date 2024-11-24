@@ -31,8 +31,50 @@ default via 10.0.3.2 dev enp0s8 proto dhcp src 10.0.3.15 metric 101
 10.7.1.0/24 dev enp0s3 proto kernel scope link src 10.7.1.100 metric 100
 🌞10.7.2.0/24 dev wg0 proto kernel scope link src 10.7.2.1 🌞
 ```
+```
+[tom@vpn etc]$ sudo cat /etc/wireguard/wg0.conf
+[Interface]
+Address = 10.7.2.1/24
+SaveConfig = false
+PostUp = firewall-cmd --zone=public --add-masquerade
+PostUp = firewall-cmd --add-interface=wg0 --zone=public
+PostDown = firewall-cmd --zone=public --remove-masquerade
+PostDown = firewall-cmd --remove-interface=wg0 --zone=public
+ListenPort = 13337
+PrivateKey =
+
+[Peer]
+PublicKey =c9Uokva31nds7pyqmp9Ri+5C5K4FnAlyusgMVzjhyRk=
+AllowedIPs = 10.7.2.11/32
+
+```
+```
+[tom@vpn ~]$ sudo wg show
+interface: wg0
+  public key: dk0dlfgT7Ud/jPAseBWrzgEaFXC0fJVB7goVFNoew2E=
+  private key: (hidden)
+  listening port: 13337
+
+peer: c9Uokva31nds7pyqmp9Ri+5C5K4FnAlyusgMVzjhyRk=
+  endpoint: 10.7.1.11:59003
+  allowed ips: 10.7.2.11/32
+  latest handshake: 36 seconds ago
+  transfer: 12.93 KiB received, 11.24 KiB sent
+[tom@vpn ~]$ 
+
+```
 
 🌞 Client Wireguard sur martine.tp7.secu
+```
+[tom@martine ~]$ cat  wireguard/martine.conf 
+[Interface]
+Address = 10.7.2.11/24
+PrivateKey =
+[Peer]
+PublicKey =dk0dlfgT7Ud/jPAseBWrzgEaFXC0fJVB7goVFNoew2E=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 10.7.1.100:13337
+```
 
 
 ```
@@ -61,3 +103,66 @@ PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
 rtt min/avg/max/mdev = 19.609/22.022/23.327/1.429 ms
 [tom@martine wireguard]$
 ```
+🌞 Client Wireguard sur votre PC
+```
+tom@debian:~$ sudo cat  wireguard/MonPc.conf 
+[Interface]
+Address = 10.7.2.100/24
+PrivateKey = 
+
+[Peer]
+PublicKey = dk0dlfgT7Ud/jPAseBWrzgEaFXC0fJVB7goVFNoew2E= 
+AllowedIPs = 10.7.2.0/24
+Endpoint = 10.7.1.100:13337
+
+```
+
+```
+tom@debian:~$ wg-quick up ./wireguard/MonPc.conf 
+Warning: `/home/tom/wireguard/MonPc.conf' is world accessible
+[#] ip link add MonPc type wireguard
+[#] wg setconf MonPc /dev/fd/63
+[#] ip -4 address add 10.7.2.100/24 dev MonPc
+[#] ip link set mtu 1420 up dev MonPc
+[#] wg set MonPc fwmark 51820
+[#] ip -4 route add 0.0.0.0/0 dev MonPc table 51820
+[#] ip -4 rule add not fwmark 51820 table 51820
+[#] ip -4 rule add table main suppress_prefixlength 0
+[#] sysctl -q net.ipv4.conf.all.src_valid_mark=1
+[#] nft -f /dev/fd/63
+
+```
+```
+tom@debian:~$ ip a
+
+[...]
+7: MonPc: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/none 
+    🌞inet 10.7.2.100/24 scope global MonPc🌞
+       valid_lft forever preferred_lft forever
+
+```
+```
+[tom@vpn ~]$ sudo wg show
+interface: wg0
+  public key: dk0dlfgT7Ud/jPAseBWrzgEaFXC0fJVB7goVFNoew2E=
+  private key: (hidden)
+  listening port: 13337
+
+peer: Oj4nZtemF+ac+moFLuCfWtcuHqkWdWC/kOdhTwrlQD4=
+  endpoint: 10.7.1.1:44675
+  allowed ips: 192.168.1.0/24
+  latest handshake: 1 minute, 15 seconds ago
+  transfer: 2.85 KiB received, 728 B sent
+
+peer: c9Uokva31nds7pyqmp9Ri+5C5K4FnAlyusgMVzjhyRk=
+  endpoint: 10.7.1.11:36391
+  allowed ips: 10.7.2.11/32
+  latest handshake: 3 minutes, 23 seconds ago
+  transfer: 476 B received, 308 B sent
+
+```
+
+🌞 Ecrire un script client.sh
+
+[client.sh](tp7/client.sh)

@@ -168,7 +168,7 @@ l1tter4lly_4_c4ptur3_th3_fl4g:heyheyhey
 Changer le type d'authenfication du mysql. 
 ```
 
-[Wireshark🦈](TP6/spoof.pcap)
+[Wireshark🦈](tp6/spoof.pcap)
 
 
 
