@@ -166,3 +166,25 @@ peer: c9Uokva31nds7pyqmp9Ri+5C5K4FnAlyusgMVzjhyRk=
 🌞 Ecrire un script client.sh
 
 [client.sh](tp7/client.sh)
+
+🌞 Générez des confs Wireguard pour tout le monde
+```
+Complete!
+La clé publique du client est :
+45FbFv/XAll992FF3QZe6lyuJXskNbf/S06MZN6tKzI=
+Ajoutez cette clé publique au serveur WireGuard avec l'adresse IP : 10.7.2.12/24
+Voici le contenu du [peer] à ajouter au serveur :
+[Peer]
+PublicKey = 45FbFv/XAll992FF3QZe6lyuJXskNbf/S06MZN6tKzI=
+AllowedIPs = 10.7.2.12/24
+Création des alias pour les interfaces...
+Alias vpn-up ajouté à /root/.bashrc
+Alias vpn-down ajouté à /root/.bashrc
+Voulez-vous activer l'interface WireGuard ? (O/N) : n
+L'interface WireGuard n'a pas été activée. Vous pouvez l'activer manuellement avec la commande 'vpn-up'.
+Configuration du client WireGuard terminée. Le fichier de configuration est situé dans /etc/wireguard/client.conf.
+```
+
+```
+
+```
