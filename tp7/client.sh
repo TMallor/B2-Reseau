@@ -26,7 +26,7 @@ CLIENT_CONF="/etc/wireguard/client.conf"
 cat <<EOL > $CLIENT_CONF
 [Interface]
 PrivateKey = $PRIVATE_KEY
-Address = 10.7.1.${RANDOM_IP}/24
+Address = 10.7.2.${RANDOM_IP}/24
 
 [Peer]
 PublicKey = dk0dlfgT7Ud/jPAseBWrzgEaFXC0fJVB7goVFNoew2E=
